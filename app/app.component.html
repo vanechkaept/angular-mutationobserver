@@ -1,0 +1,11 @@
+<div #divToTrackHeightChanges>
+    <h1>Here is a div that changes</h1>    
+    <span style="width:200px;display:inline-block;" *ngFor="let element of elements; let i = index">
+      Element <button (click)="removeElement(i)">Remove</button>
+    </span>
+    <br/>
+    <br/>  
+  <button (click)="addElement()">Click me enough times to increase the divs height!</button>
+</div>
+<div>The div above has a height of  {{height}} and width of {{width}}</div>
+<div>RESIZE the window to test as well</div>
